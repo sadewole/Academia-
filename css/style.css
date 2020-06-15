@@ -51,6 +51,18 @@ a:hover {
   background: #ccc;
 }
 
+.items>div {
+  width: 40%;
+  margin: auto;
+}
+
+@media(max-width: 980px) {
+  .items>div {
+    width: 70%;
+    margin: auto;
+  }
+}
+
 .plan {
   position: relative;
   width: fit-content;
@@ -67,6 +79,7 @@ a:hover {
 }
 
 .check {
+  font-size: 1.2rem;
   width: 20px;
   height: 20px;
 }

@@ -9,7 +9,7 @@ a:hover {
 
 .navigator {
   position: relative;
-  width: 400px;
+  max-width: 400px;
   height: 50px;
   display: flex;
   align-items: center;

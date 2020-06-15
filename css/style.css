@@ -1,0 +1,81 @@
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigator {
+  position: relative;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ccc;
+  border: 1px solid #ccc;
+  outline: transparent;
+  border-radius: 34px;
+  font-weight: bold;
+  transition: all 0.6s ease-in-out;
+}
+
+.personal,
+.organization {
+  width: 50%;
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+.current {
+  position: absolute;
+  content: '';
+  top: 0;
+  height: 100%;
+  width: 50%;
+  border-radius: 34px;
+  background-color: rgb(37, 35, 35);
+  color: #ccc;
+  transition: all 0.6s ease-in-out;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.card-text {
+  background: #000;
+}
+
+.card .items {
+  background: #ccc;
+}
+
+.plan {
+  position: relative;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+.plan::before {
+  position: absolute;
+  top: 3rem;
+  content: '';
+  width: calc(100% - 50%);
+  height: 1px;
+  background: #fff;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+}
+
+.plans-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+div[data-attr='organization'] {
+  display: none;
+}
